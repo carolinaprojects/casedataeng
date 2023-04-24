@@ -12,6 +12,10 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "Engenheiro de Dados - CSV.zip",
 				"fileSystem": "work"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
 			}
 		}
 	}
