@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "sql",
 						"type": "DatasetReference"
 					},
 					"name": "BancodeDados"
@@ -43,6 +43,21 @@
 				"     ignoreNoFilesFound: false) ~> Personcsv",
 				"Personcsv sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     input(",
+				"          BusinessEntityID as integer,",
+				"          PersonType as string,",
+				"          NameStyle as integer,",
+				"          Title as string,",
+				"          FirstName as string,",
+				"          MiddleName as string,",
+				"          LastName as string,",
+				"          Suffix as string,",
+				"          EmailPromotion as integer,",
+				"          AdditionalContactInfo as string,",
+				"          Demographics as string,",
+				"          rowguid as string,",
+				"          ModifiedDate as date",
+				"     ),",
 				"     deletable:false,",
 				"     insertable:true,",
 				"     updateable:false,",
