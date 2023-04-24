@@ -1,0 +1,29 @@
+{
+	"name": "OFFERP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArmazenamentoLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Sales.SpecialOfferProduct.csv",
+				"folderPath": "Engenheiro de Dados - CSV",
+				"fileSystem": "work"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SpecialOfferID;ProductID;rowguid;ModifiedDate",
+				"type": "String"
+			}
+		]
+	}
+}
