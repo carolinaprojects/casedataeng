@@ -1,0 +1,29 @@
+{
+	"name": "OrderHeader",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArmazenamentoLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Sales.SalesOrderHeader.csv",
+				"folderPath": "Engenheiro de Dados - CSV",
+				"fileSystem": "work"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SalesOrderID;RevisionNumber;OrderDate;DueDate;ShipDate;Status;OnlineOrderFlag;SalesOrderNumber;PurchaseOrderNumber;AccountNumber;CustomerID;SalesPersonID;TerritoryID;BillToAddressID;ShipToAddressID;ShipMethodID;CreditCardID;CreditCardApprovalCode;CurrencyRateID;SubTotal;TaxAmt;Freight;TotalDue;Comment;rowguid;ModifiedDate",
+				"type": "String"
+			}
+		]
+	}
+}
