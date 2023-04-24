@@ -1,0 +1,28 @@
+{
+	"name": "Test",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArmazenamentoLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Engenheiro de Dados - CSV",
+				"fileSystem": "work"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BusinessEntityID;PersonType;NameStyle;Title;FirstName;MiddleName;LastName;Suffix;EmailPromotion;AdditionalContactInfo;Demographics;rowguid;ModifiedDate",
+				"type": "String"
+			}
+		]
+	}
+}
