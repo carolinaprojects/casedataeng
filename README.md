@@ -9,4 +9,4 @@ Azure SQL DataBase,
 Aquivo zip extraido para o data lake atráves de um pipeline simples, posteriomente foi realizada a transformação das colunas dos arquivos csv e importados para o banco de dados BD-START.
 
 
-Ainda com dificuldade e buscando aprimoramento de técnicas.
+Ainda com dificuldade e buscando aprimoramento de técnicas. Porém com muita disposição e vontade de aprender a cada dia.
