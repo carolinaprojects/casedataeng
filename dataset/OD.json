@@ -1,0 +1,29 @@
+{
+	"name": "OD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArmazenamentoLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Sales.SalesOrderDetail.csv",
+				"folderPath": "Engenheiro de Dados - CSV",
+				"fileSystem": "work"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SalesOrderID;SalesOrderDetailID;CarrierTrackingNumber;OrderQty;ProductID;SpecialOfferID;UnitPrice;UnitPriceDiscount;LineTotal;rowguid;ModifiedDate",
+				"type": "String"
+			}
+		]
+	}
+}
