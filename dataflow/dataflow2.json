@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "sql",
+						"referenceName": "TBL1",
 						"type": "DatasetReference"
 					},
 					"name": "BancodeDados"
